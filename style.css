@@ -1,0 +1,295 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* colors */
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(212, 15%, 23%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: var(--very-dark-blue);
+    overflow: hidden;
+}
+
+main .rating-state {
+    display: block;
+    width: 21.8em;
+    background-color: var(--dark-blue);
+    padding: 1.7em 1.55em;
+    border-radius: 15px;
+}
+
+main .rating-state .star-icon-container {
+    background-color: var(--medium-grey);
+    width: 2.5em;
+    height: 2.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: .2em 0 2.95em .15em;
+    border-radius: 50%;
+}
+
+main .rating-state .star-icon {
+    width: .92em;
+}
+
+main .rating-state h2 {
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-top: -1em;
+    margin-bottom: 1.7em;
+}
+
+main .rating-state p {
+    font-size: .934rem;
+    color: var(--light-grey);
+    line-height: 1.6;
+    margin-top: -2.1em;
+    margin-bottom: 2em;
+}
+
+main .rating-state .rate-numbers {
+    font-weight: 700;
+    color: var(--light-grey);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 1.6em;
+}
+
+main .rating-state .rate-numbers .number {
+    background-color: var(--medium-grey);
+    border-radius: 50%;
+    width: 2.7em;
+    height: 2.7em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+    transition: .2s ease-in;
+}
+
+main .rating-state .rate-numbers .number:hover {
+    background-color: var(--orange);
+}
+
+main .rating-state .rate-numbers .number:focus {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+
+main .rating-state .submit {
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 1.1em;
+    margin-bottom: .5em;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+main .rating-state .submit:hover {
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+main .thank-you-state {
+    display: none;
+    background-color: var(--dark-blue);
+    width: 23.3em;
+    height: 25.6em;
+    padding: 2.5em 1.55em;
+    border-radius: 15px;
+    text-align: center;
+}
+
+main .thank-you-state img {
+    display: block;
+    width: 10.3em;
+    margin: 0 auto;
+    margin-bottom: 1.7em;
+}
+
+main .thank-you-state .selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--orange);
+    background-color: var(--medium-grey);
+    border-radius: 20px;
+    width: 12em;
+    height: 2em;
+    margin-inline: auto;
+    margin-bottom: 1.82em;
+}
+
+main .thank-you-state h2 {
+    font-size: 1.69rem;
+    color: var(--white);
+    margin-bottom: .45em;
+}
+
+main .thank-you-state .appreciation-text {
+    color: var(--white);
+    line-height: 1.59;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    main {
+        width: 25.4em;
+        height: 25.2em;
+        border-radius: 25px;
+    }
+
+    main main .star-icon-container {
+        width: 2.7em;
+        height: 2.7em;
+        margin: .35em 0 3.78em .6em;
+    }
+
+    main main .star-icon {
+        width: 1.1em;
+    }
+
+    main h2 {
+        font-size: 1.7rem;
+        margin: -.95em 0 1.45em .25em;
+    }
+
+    main p {
+        font-size: .925rem;
+        line-height: 1.62;
+        margin-top: -2em;
+        margin-left: .45em;
+    }
+
+    main .rate-numbers {
+        margin-bottom: 2em;
+        margin-top: -.12em;
+        margin-left: .5em;
+        margin-right: .9em;
+    }
+
+    main .rate-numbers .number {
+        width: 3em;
+        height: 3em;
+    }
+
+    .submit {
+        width: 23.3em;
+        height: 3em;
+        margin-left: .5em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .thank-you-state {
+        width: 25.4em;
+        height: 25.6em;
+        padding: 3em 1.55em;
+        border-radius: 25px;
+    }
+
+    .thank-you-state img {
+        width: 10.4em;
+        padding-right: .4em;
+        margin-bottom: 1.9em;
+    }
+
+    .thank-you-state h2 {
+        margin-top: 1.25em;
+    }
+
+    .thank-you-state .appreciation-text {
+        font-size: .93rem;
+        margin-top: -.2em;
+        width: 22.5em;
+        margin-left: .5em;
+        line-height: 1.61;
+    }
+}
